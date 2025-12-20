@@ -3,17 +3,19 @@ backend:
   repo: alberto56/test1019
   branch: main
   base_url: https://suresh-issue-82.dcycleproject.org
-  auth_endpoint: /auth/github/68bc42a0ed404407b8afb35c
-
-media_folder: "media"   # where uploads are committed in the repo
-public_folder: "/media"
-
+  auth_endpoint: /auth/github/repo/6946e40e7c6e2b059bec6748
+media_folder: media
+public_folder: /media
 collections:
-  - name: "pages"
-    label: "Pages"
-    folder: "content/pages"
+  - name: pages
+    label: Pages
+    folder: content/pages
     create: true
-    slug: "{{slug}}"
+    slug: '{{slug}}'
     fields:
-      - { name: "title", label: "Title", widget: "string" }
-      - { name: "body", label: "Body", widget: "markdown" }
+      - name: title
+        label: Title
+        widget: string
+      - name: body
+        label: Body
+        widget: markdown
